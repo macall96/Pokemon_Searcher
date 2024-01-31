@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <link rel="icon" type="image/vnd.icon" href="./styles/pokeball_icon.png">
+    <link rel="stylesheet" href="./styles/output.css">
+    <title>Pokemon Searcher</title>
+</head>
+
+<body class="bg-teal-200">
+<header><img src="./styles/pokemon-logo.png" alt="" id="logoPoke" class="h-24 float-left ml-4 mt-4"/>
+<h1 id="titulo" class="p-2 text-5xl text-yellow-500 w-20 float-left mt-24 -ml-56">Searcher</h1>
+</header>
+
+<form id="contenedorSeleccion" class="float-left w-620 h-120 mt-4 ml-20 mb-9 bg-blue-400 font-acme text-yellow-500 border-5 border-yellow-400 rounded p-4">
+  <p id="tituloSeleccion" class="text-xl text-center rounded mb-5">ELIGE TU POKEMON</p>
+  <label for="seleccion" id="labelSeleccion" class="text-2xl text-center ml-4 float-left"> Introduce su nombre aquí </label>
+  <input type="text" id="txtSeleccion" class="text-xl text-yellow-600 rounded-md float-left ml-5 mt-1"> 
+  <input type="submit" name="" id="btnBuscar" value="Buscar" class="bg-yellow-600 text-xl text-gray-200 border-yellow-600 rounded-md ml-2 p-2">
+</form>
+
+<div id="contenedorInfo" class="float-left ml-32 rounded mb-5">
+    <img src="./styles/tumblr-inline-ob0pzkZIKB1t00ti-unscreen.gif" alt="" id="gifPikachu" class="float-right mt-8">
+</div>
+
+<script type="module" src="./src/script.mjs"></script>
+</body>
+
+</html>
